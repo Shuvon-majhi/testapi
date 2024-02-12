@@ -16,27 +16,28 @@ class _weatherInfoState extends State<weatherInfo> {
         title: const Text('Weather info App'),
       ),
       body: ListView.builder(
-          itemCount: weather.length,
-          itemBuilder: (context, index) {
-            return Card(
-              child: ListTile(
-                title: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'City: ${weather[index]['city']}',
-                      style: const TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.w600),
-                    ),
-                    Text('Temperature: ${weather[index]['temperature']}'),
-                    Text('Condition: ${weather[index]['condition']}'),
-                    Text('Humidity: ${weather[index]['humidity']}'),
-                    Text('WindSpeed: ${weather[index]['windSpeed']}'),
-                  ],
-                ),
+        itemCount: weather.length,
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'City: ${weather[index]['city']}',
+                    style: const TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.w600),
+                  ),
+                  Text('Temperature: ${weather[index]['temperature']}'),
+                  Text('Condition: ${weather[index]['condition']}'),
+                  Text('Humidity: ${weather[index]['humidity']}'),
+                  Text('WindSpeed: ${weather[index]['windSpeed']}'),
+                ],
               ),
-            );
-          },),
+            ),
+          );
+        },
+      ),
     );
   }
 }
