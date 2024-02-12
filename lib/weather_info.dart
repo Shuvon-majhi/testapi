@@ -28,10 +28,10 @@ class _weatherInfoState extends State<weatherInfo> {
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.w600),
                   ),
-                  Text('Temperature: ${weather[index]['temperature']}'),
+                  Text('Temperature: ${weather[index]['temperature']}°C'),
                   Text('Condition: ${weather[index]['condition']}'),
-                  Text('Humidity: ${weather[index]['humidity']}'),
-                  Text('WindSpeed: ${weather[index]['windSpeed']}'),
+                  Text('Humidity: ${weather[index]['humidity']}%'),
+                  Text('Wind Speed: ${weather[index]['windSpeed']} m/s'),
                 ],
               ),
             ),
