@@ -36,7 +36,7 @@ class _weatherInfoState extends State<weatherInfo> {
                 ),
               ),
             );
-          }),
+          },),
     );
   }
 }

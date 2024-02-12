@@ -8,7 +8,6 @@ class testApi extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const weatherInfo(),
-      //home: addtodoList(),
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.deepPurple.shade300,
